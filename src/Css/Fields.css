@@ -1,0 +1,69 @@
+/* Table container */
+.table {
+    margin-top: 20px;
+    animation: fadeInTable 1s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect */
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    transform: scale(1.02);
+  }
+  
+  /* Animation for row fade-in */
+  .fade-in-row {
+    opacity: 0;
+    animation: fadeInRow 0.6s forwards;
+  }
+  
+  /* Fade-in row animation */
+  @keyframes fadeInRow {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-in table animation */
+  @keyframes fadeInTable {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Table with borders */
+  .table-bordered {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Bordered cells */
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #dee2e6;
+    text-align: center;
+    padding: 12px;
+  }
+  
+  /* Styling for primary rows */
+  .table-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Animation for table shadow on hover */
+  .table:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  

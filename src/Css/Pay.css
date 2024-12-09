@@ -1,0 +1,77 @@
+/* Container animation */
+.container {
+    animation: fadeIn 1s ease-in-out;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  /* Card transitions */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  /* Hover effect for cards */
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Fade-in effect for elements */
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Fade-in effect for cards */
+  .fade-in-card {
+    animation: fadeInCard 0.5s forwards;
+  }
+  
+  /* Card fade-in keyframe */
+  @keyframes fadeInCard {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* General fade-in keyframe */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Text colors */
+  .text-info {
+    color: #17a2b8;
+  }
+  
+  .text-danger {
+    color: #dc3545;
+  }
+  
+  .text-success {
+    color: #28a745;
+  }
+  
+  /* Responsive improvements */
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 20px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  }
+  
